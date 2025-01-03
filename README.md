@@ -1,2 +1,2 @@
-# personal-portfolio
-v2025
+# Khush Patel Portfolio v2025
+
