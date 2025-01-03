@@ -2,8 +2,8 @@
     <div class="work-page">
       <nav>
         <a href=""><NuxtLink to="/">HOME</NuxtLink></a>
-        <a href=""><NuxtLink to="/about">ABOUT</NuxtLink></a>
         <a href=""><NuxtLink to="/work">WORK</NuxtLink></a>
+        <a href=""><NuxtLink to="/about">ABOUT</NuxtLink></a>
       </nav>
 
       <hr class="solid">
@@ -23,6 +23,7 @@
         <aside>
           <h3>UEFA Champions League</h3>
           <h4>UEFA Champions League Trophy Animation. Directed and Curated. Made in Blender, post processed in Premiere Pro.</h4>
+          <a class="links" target="_blank" href="https://www.instagram.com/p/C7waSXIM2-a/">Click Me</a>
         </aside>
           <img src="/assets/UEFACL-4K.png" alt="">
       </div>
@@ -67,3 +68,16 @@
 }
 </style>
 -->
+
+<script setup>
+// Dynamically set the page metadata
+useHead({
+  title: 'Khush Patel Portfolio: Work',
+  meta: [
+    {
+      name: 'description',
+      content: 'none'
+    }
+  ]
+});
+</script>

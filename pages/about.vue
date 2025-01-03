@@ -2,8 +2,8 @@
     <div class="about-page">
       <nav>
         <a href=""><NuxtLink to="/">HOME</NuxtLink></a>
-        <a href=""><NuxtLink to="/about">ABOUT</NuxtLink></a>
         <a href=""><NuxtLink to="/work">WORK</NuxtLink></a>
+        <a href=""><NuxtLink to="/about">ABOUT</NuxtLink></a>
       </nav>
     <div class="text">
       <p>A Multidisciplinary Creative Designer + Developer. Khush Patel based from Toronto, holds a passion for blending design & development. Specializing in 3D Design, Brand/Product Design & VR/AR. Focusing on a human-computer interaction to generate innovative experiences.</p>
@@ -13,6 +13,19 @@
     </div>
     </div>
   </template>
+
+<script setup>
+// Dynamically set the page metadata
+useHead({
+  title: 'Khush Patel Portfolio: About',
+  meta: [
+    {
+      name: 'description',
+      content: 'none'
+    }
+  ]
+});
+</script>
 
 
 

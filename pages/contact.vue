@@ -11,3 +11,16 @@
         </div>
     </div>
 </template>
+
+<script setup>
+// Dynamically set the page metadata
+useHead({
+  title: 'Khush Patel Portfolio: Contact',
+  meta: [
+    {
+      name: 'description',
+      content: 'Contact Khush Patel to collaborate or connect.'
+    }
+  ]
+});
+</script>

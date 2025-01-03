@@ -5,6 +5,7 @@
       <a href=""><NuxtLink to="/about">ABOUT</NuxtLink></a>
       <a href=""><NuxtLink to="/work">WORK</NuxtLink></a>
     </nav>-->
+
     <h1>Hi, I'm Khush 👋</h1>
     <div class="container">
       <div class="grid">
@@ -25,3 +26,19 @@
   
   </div>
 </template>
+
+
+<script setup>
+
+useHead({
+  title: 'Khush Patel Portfolio: Home',
+  meta: [
+    {
+      name: 'description',
+      content: 'none'
+    }
+  ]
+});
+
+
+</script>

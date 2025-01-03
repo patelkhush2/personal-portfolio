@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/styles.css"],
-  modules: ['@nuxt/image', "@nuxtjs/cloudinary"],
+  modules: ['@nuxt/image'],
   
 })
 
