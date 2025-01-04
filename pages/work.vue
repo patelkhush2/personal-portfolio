@@ -25,7 +25,7 @@
           <h4>UEFA Champions League Trophy Animation. Directed and Curated. Made in Blender, post processed in Premiere Pro.</h4>
           <a class="links" target="_blank" href="https://www.instagram.com/p/C7waSXIM2-a/">Click Me</a>
         </aside>
-          <img src="/assets/UEFACL-4K.png" alt="">
+          <img src="/assets/UEFACL-4K.jpg" alt="">
       </div>
       
       <hr class="solid">
@@ -36,8 +36,8 @@
           <h3>NOCTA Editorial</h3>
           <h4>Custom conept titles & graphic for NOCTA. Exploring typography and design style with brushes to create something unique. Made in Adobe Fresco & Photoshop.</h4>
           </aside>
-          <img src="/assets/Styles.png" alt="">
-          <img src="/assets/Nocata Sketched.png" alt="">
+          <img src="/assets/Styles.jpeg" alt="">
+          <img src="/assets/Nocata Sketched.jpeg" alt="">
       </div>
 
       <hr class="solid">

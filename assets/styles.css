@@ -7,9 +7,12 @@
     font-style: normal;
     scroll-behavior: smooth;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
-    overflow: auto;
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
 }
@@ -47,7 +50,20 @@ body {
     min-height: 100vh; /* Cover the full viewport height */
     width: 100%; /* Ensure full width */
     height: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    overflow: hidden;
   }
+
+.text {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    overflow: hidden;
+}
 
 .work-page {
     background-color: rgba(0, 0, 0, .05);
@@ -56,24 +72,16 @@ body {
     height: 100%;
 }
 
-h1 {
+h1, h2 {
+    display: flex;
     color: black;
     font-size: 150px;
     letter-spacing: -6px;
     position: relative; 
     justify-content: center;
-    display: flex;
 }
 
-h2 {
-    color: black;
-    font-size: 150px;
-    letter-spacing: -6px;
-    position: relative; 
-    justify-content: left;
-    display: flex;
-    padding: 0rem 5rem;
-}
+
 
 p {
     margin: 5rem 12rem;
@@ -86,13 +94,6 @@ p {
 
 }
 
-.text {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 10rem;
-}
 
 
 nav {
@@ -100,6 +101,7 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     padding: 2em;
     width: 100vw;
     gap: 5em;
@@ -138,8 +140,9 @@ a:hover {
 }
 
 .container {
-    padding: 0rem 2rem;
     display: flex; 
+    flex-wrap: wrap;
+    padding: 0rem 0rem;
     height: 100%; 
     width: 100%; 
     position: relative;
@@ -286,4 +289,49 @@ h4{
     height: 70vh;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
 
+@media (max-width: 768px) {
+    .about-page {
+        padding-bottom: 2rem; /* Smaller padding */
+    }
+
+    h1, span {
+        font-size: 80px; /* Adjust heading size */
+        letter-spacing: -2px;
+        margin: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .item {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* For screens smaller than 480px (older iPhones like SE) */
+@media (max-width: 480px) {
+    .about-page {
+        padding-bottom: 2rem; /* Smaller padding */
+    }
+
+    h1, span {
+        font-size: 60px /* Further reduce heading size */
+        
+    }
+
+    .item {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+}

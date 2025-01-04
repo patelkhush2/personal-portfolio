@@ -4,7 +4,7 @@
     <div v-if="isLoading" class="preloader">
       <h1 class="counter">0</h1>
       <div class="overlay">
-        <div class="bar" v-for="n in 10" :key="n"></div>
+        <div class="bar" v-for="n in 6" :key="n"></div>
       </div>
     </div>
 
