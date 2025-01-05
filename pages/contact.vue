@@ -5,9 +5,7 @@
         </div>
     
         <div class="info">
-            <p>Let's Work... or just connect!</p>
-            <p>Email: khush@dotlabstudio.com</p>
-            <p>Instagram: @khushsptl</p>
+            <p class="info">Let's Work... or just connect! Email: khush@dotlabstudio.com Instagram: @khushsptl</p>
         </div>
     </div>
 </template>
