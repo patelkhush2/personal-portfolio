@@ -64,7 +64,7 @@ body {
     align-items: center; /* Horizontally center the content */
     text-align: center;
     padding: 20px; /* Optional padding for spacing */
-    max-width: 800px; /* Optional max width for readability */
+    max-width: 1000px; /* Optional max width for readability */
     margin: 0 auto;
 }
 
