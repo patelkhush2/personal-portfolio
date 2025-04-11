@@ -1,12 +1,5 @@
 <template>
   <div>
-    <!-- Preloader -->
-    <div v-if="isLoading" class="preloader">
-      <h1 class="counter">0</h1>
-      <div class="overlay">
-        <div class="bar" v-for="n in 6" :key="n"></div>
-      </div>
-    </div>
 
     <!-- Page Transition -->
     <transition name="page" mode="out-in">
@@ -15,63 +8,6 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
-import gsap from 'gsap';
-
-// Add dynamic head tags
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      href: 'https://use.typekit.net/hhz6dhb.css'
-    }
-  ]
-});
-
-// Preloader state
-const isLoading = ref(true);
-
-onMounted(() => {
-  // Start the preloader animation
-  let counterElement = document.querySelector(".counter");
-  let currentValue = 0;
-
-  function updateCounter() {
-    if (currentValue === 100) {
-      return;
-    }
-
-    currentValue += Math.floor(Math.random() * 10) + 1;
-    if (currentValue > 100) currentValue = 100;
-
-    counterElement.textContent = currentValue;
-
-    let delay = Math.floor(Math.random() * 200) + 50;
-    setTimeout(updateCounter, delay);
-  }
-
-  updateCounter();
-
-  // GSAP animations
-  gsap.to(".counter", 0.25, {
-    delay: 3.5,
-    opacity: 0,
-  });
-
-  gsap.to(".bar", 1.5, {
-    delay: 3.5,
-    height: 0,
-    stagger: {
-      amount: 0.5,
-    },
-    ease: "power4.inOut",
-    onComplete: () => {
-      isLoading.value = false; // Hide the preloader
-    },
-  });
-});
-</script>
 
 <style>
 
