@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",
+    "@nuxt/ui-pro": "^1.6.0",
     "@nuxtjs/cloudinary": "^4.0.0",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
